@@ -1,5 +1,25 @@
+
 (function() {
   "use strict";
+
+  // Modal universal untuk foto besar anggota
+  document.addEventListener('DOMContentLoaded', function() {
+    var fotoModal = document.getElementById('modalFotoBesar');
+    var fotoModalImg = document.getElementById('modalFotoBesarImg');
+    document.querySelectorAll('img[data-bs-target="#modalFotoBesar"]').forEach(function(img) {
+      img.addEventListener('click', function() {
+        var src = img.getAttribute('data-img');
+        if (fotoModalImg && src) {
+          fotoModalImg.src = src;
+        }
+      });
+    });
+    if (fotoModal) {
+      fotoModal.addEventListener('hidden.bs.modal', function() {
+        if (fotoModalImg) fotoModalImg.src = '';
+      });
+    }
+  });
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down

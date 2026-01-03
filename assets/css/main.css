@@ -1,3 +1,11 @@
+/* Custom: Smaller, elegant site name */
+.sitename {
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
 /* Ukuran foto tim di swiper dan tombol sejajar */
 .team-member .img-fluid.rounded-circle {
   width: 180px;
