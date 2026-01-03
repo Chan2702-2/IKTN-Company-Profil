@@ -218,6 +218,16 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+    <!-- Script Modal Foto Besar Universal -->
+    <script>
+      document.querySelectorAll('[data-bs-target="#modalFotoBesar"]').forEach(function(img) {
+        img.addEventListener('click', function() {
+          var src = img.getAttribute('data-img');
+          document.getElementById('modalFotoBesarImg').src = src;
+        });
+      });
+    </script>
+
   <style>
     @media (max-width: 767.98px) {
       #team .row.gy-4, #team .row.gy-4 > div {
