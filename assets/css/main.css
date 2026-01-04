@@ -1,8 +1,8 @@
 /* Custom: Smaller, elegant site name */
 .sitename {
-  font-size: 1rem;
-  font-weight: 100;
-  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
